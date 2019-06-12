@@ -14,14 +14,14 @@
 }
 .Fitness-Card-Info {
     padding-left: 0;
-    padding-right: 75px;
+    padding-right: 7px;
 }
 .Fitness-Card-Info h1{
-    font-size: 23px;
+    font-size: 1.5em;
     color: rgb(0, 0, 0);
 }
 .Fitness-Card-Info p{
-    font-size: 11px;
+    font-size: 1em;
     color: rgb(0, 0, 0);
 }
 .Fitness-Add {
@@ -33,7 +33,7 @@
     height: 60px;
 }
 .Fitness-Img {
-    max-width: 60%;
-    max-height: auto;
+    max-width: 100%;
+    height: auto;
     
 }
