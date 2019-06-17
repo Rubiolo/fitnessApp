@@ -1,5 +1,4 @@
 import React from 'react'
-//import fotoBloque1 from '../images/hombre-abs.jpg'
 import './styles/Card.css'
 import circulosImg from '../images/circles.png'
 
