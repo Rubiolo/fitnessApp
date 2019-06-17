@@ -5,7 +5,7 @@ import circulosImg from '../images/circles.png'
 class Card extends React.Component {
 
     //Para mutar la tarjeta de un estado (aquí solo la imagen) a otro despues de un tiempo terminado
-   /* constructor(props){
+    /*constructor(props){
         super(props)
         this.state ={
             image : 'https://images.pexels.com/photos/260352/pexels-photo-260352.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
