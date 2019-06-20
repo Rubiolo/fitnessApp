@@ -24,15 +24,17 @@ class Card extends React.Component {
         const { title, description, img, topColor, bottomColor } = this.props
         return (
             <div className="card my-4 mx-auto Fitness-Card"
-            style={{
-                 
-                backgroundImage: `url(${circulosImg}), linear-gradient(to bottom, ${topColor}, ${bottomColor})`
-            }}
+            
             >
-                <div className="card-body">
+                <div className="card-body"
+                style={{
+                 
+                    backgroundImage: `url(${circulosImg}), linear-gradient(to bottom, ${topColor||'#56CCF2'}, ${bottomColor||'#2F80ED'})`
+                }}
+                >
                     <div className="row center ">
-                        <div className="col-4 text-center align-self-center">
-                            <img src={img} alt="esto es un tio cuadrao" className="Fitness-Img my-auto  " />
+                        <div className="col-4 ">
+                            <img src={img} alt="Exercise" className="Fitness-Img float-right  " />
                         </div>
                         <div className="col-8 Fitness-Card-Info my-auto mx-auto">
                             <h1>{title}</h1>
