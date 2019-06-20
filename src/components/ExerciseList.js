@@ -2,19 +2,19 @@ import React from 'react'
 import Card from './Cards'
 
 const ExerciseList = ({ exercises }) => (
-    <div>
+    <React.Fragment>
         {exercises.map((exercise) => (
             <Card
                 key={exercise.id}
                 title={exercise.title}
                 description={exercise.description}
                 img={exercise.img}
-                topColor={exercise.topColor}
-                bottomColor={exercise.bottomColor}
+                leftColor={exercise.leftColor}
+                rightColor={exercise.rightmColor}
             />
         ))}
         }
-    </div>
+    </React.Fragment>
 )
 
 export default ExerciseList

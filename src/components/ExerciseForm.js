@@ -14,17 +14,14 @@ class ExerciseForm extends React.Component {
         )
     }*/
     
-    handleSubmit = e => {
-        e.preventDefault() 
-        console.log(this.state) 
-    }
+   
 
     render() {
-        const {onChange, form} = this.props
+        const {onChange, onSubmit, form} = this.props
         return (
             <div className="container">
                 <form
-                    onSubmit={this.handleSubmit}
+                    onSubmit={onSubmit}
                 >
                     <div className="form-group">
                         <input
@@ -61,20 +58,20 @@ class ExerciseForm extends React.Component {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="topColor"
-                                name="topColor"
+                                placeholder="left Color"
+                                name="leftColor"
                                 onChange={onChange}
-                                value={form.topColor}
+                                value={form.leftColor}
                             />
                         </div>
                         <div className="col">
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="bottomColor"
-                                name="bottomColor"
+                                placeholder="right Color"
+                                name="rightColor"
                                 onChange={onChange}
-                                value={form.bottomColor}
+                                value={form.rightColor}
                             />
                         </div>
                     </div>

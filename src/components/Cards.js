@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/Card.css'
 import circulosImg from '../images/circles.png'
+import emptyImg from '../images/cameraEmpty.svg'
 
 class Card extends React.Component {
 
@@ -21,7 +22,7 @@ class Card extends React.Component {
     }*/
 
     render() {
-        const { title, description, img, topColor, bottomColor } = this.props
+        const { title, description, img, leftColor, rightColor } = this.props
         return (
             <div className="card my-4 mx-auto Fitness-Card"
             
@@ -29,12 +30,12 @@ class Card extends React.Component {
                 <div className="card-body"
                 style={{
                  
-                    backgroundImage: `url(${circulosImg}), linear-gradient(to bottom, ${topColor||'#56CCF2'}, ${bottomColor||'#2F80ED'})`
+                    backgroundImage: `url(${circulosImg}), linear-gradient(to right, ${leftColor ||'#56CCF2'}, ${rightColor ||'#2F80ED'})`
                 }}
                 >
-                    <div className="row center ">
-                        <div className="col-4 ">
-                            <img src={img} alt="Exercise" className="Fitness-Img float-right  " />
+                    <div className="row center vertical-align">
+                        <div className="col-4 a">
+                            <img src={img || emptyImg} alt="Exercise" className="Fitness-Img float-right  " />
                         </div>
                         <div className="col-8 Fitness-Card-Info my-auto mx-auto">
                             <h1>{title}</h1>
